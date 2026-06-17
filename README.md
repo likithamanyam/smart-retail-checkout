@@ -1,16 +1,123 @@
-# React + Vite
+# Smart Retail Checkout
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+Smart Retail Checkout is a React-based billing application designed to simulate a retail checkout system. The application allows users to add products with their name, price, and quantity, automatically calculate cart totals, apply discounts, calculate GST, and generate the final bill.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The application includes a modern login interface, intuitive user experience, and responsive design to provide a seamless checkout process.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+* User Login Page
+* Add Items with Name, Price, and Quantity
+* Dynamic Cart Management
+* Delete Items from Cart
+* Automatic Cart Total Calculation
+* 10% Discount on Orders Above ₹1000
+* GST (18%) Calculation
+* Final Bill Generation
+* Responsive User Interface
+* Smart Retail Branding
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Technology Stack
+
+* React JS
+* Vite
+* Bootstrap 5
+* React Router DOM
+* React Icons
+* CSS3
+
+---
+
+## Setup Instructions
+
+### Clone Repository
+
+```bash
+git clone https://github.com/likithamanyam/smart-retail-checkout.git
+```
+
+### Navigate to Project Folder
+
+```bash
+cd smart-retail-checkout
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Start Development Server
+
+```bash
+npm run dev
+```
+
+### Open Application
+
+```text
+http://localhost:5173
+```
+
+---
+
+## Business Logic
+
+### Offer Applied
+
+* Customers receive a 10% discount when the cart value exceeds ₹1000.
+
+### Tax Applied
+
+* GST is calculated at 18% after applying the discount.
+
+### Final Bill Formula
+
+```text
+Final Bill = (Cart Total - Discount) + GST
+```
+
+---
+
+## Assumptions
+
+* Login functionality is implemented for demonstration purposes only.
+* Backend authentication is not included.
+* All prices are entered in Indian Rupees (₹).
+* GST rate is fixed at 18%.
+* Discount rate is fixed at 10% for orders above ₹1000.
+
+---
+
+## AI Usage Note
+
+AI Tool Used:
+
+* ChatGPT
+
+How AI Helped:
+
+* Assisted with React component development.
+* Helped design the application structure.
+* Assisted in implementing billing calculations.
+* Helped improve UI/UX design and styling.
+* Assisted in debugging and code refinement.
+* Helped prepare project documentation.
+
+Challenges Encountered:
+One challenge encountered during development was integrating routing, component styling, and maintaining a consistent user interface across multiple pages. This was resolved through iterative testing, debugging, and refinement of the React components and CSS structure.
+
+---
+
+## Author
+
+Likitha M R
+
+Smart Retail Checkout – Albertsons Case Study Submission
